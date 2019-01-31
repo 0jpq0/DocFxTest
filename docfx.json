@@ -4,13 +4,14 @@
       "src": [
         {
           "files": [
-            "src/**.csproj"
+            "src/DevCore/**.csproj"
           ]
         }
       ],
       "dest": "api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "force":true
     }
   ],
   "build": {
@@ -49,10 +50,10 @@
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [],
+    "globalMetadataFiles": ["gitment.json"],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "templates/default"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
