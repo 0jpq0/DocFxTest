@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: DF.Core.Class1
+  commentId: T:DF.Core.Class1
+  id: Class1
+  parent: DF.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Class1
+  nameWithType: Class1
+  fullName: DF.Core.Class1
+  type: Class
+  source:
+    remote:
+      path: DevFramework/DF.Core/Class1.cs
+      branch: master
+      repo: git@github.com:0jpq0/DocFxCSharpProj.git
+    id: Class1
+    path: src/DocFxCSharpProj/DevFramework/DF.Core/Class1.cs
+    startLine: 4
+  assemblies:
+  - DF.Core
+  namespace: DF.Core
+  syntax:
+    content: 'public class Class1 : object'
+    content.vb: >-
+      Public Class Class1
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: DF.Core
+  commentId: N:DF.Core
+  name: DF.Core
+  nameWithType: DF.Core
+  fullName: DF.Core

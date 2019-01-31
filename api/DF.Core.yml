@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DF.Core
+  commentId: N:DF.Core
+  id: DF.Core
+  children:
+  - DF.Core.Class1
+  langs:
+  - csharp
+  - vb
+  name: DF.Core
+  nameWithType: DF.Core
+  fullName: DF.Core
+  type: Namespace
+  assemblies:
+  - DF.Core
+references:
+- uid: DF.Core.Class1
+  commentId: T:DF.Core.Class1
+  name: Class1
+  nameWithType: Class1
+  fullName: DF.Core.Class1
