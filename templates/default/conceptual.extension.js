@@ -11,5 +11,7 @@ exports.preTransform = function (model) {
  * This method will be called at the end of exports.transform in conceptual.html.primary.js
  */
 exports.postTransform = function (model) {
+  if(model.uid == null || model.uid.trim() == "")
+  	model.gitment_enable = false
   return model;
 }

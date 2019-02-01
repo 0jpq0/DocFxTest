@@ -32,7 +32,7 @@ function getHtmlId(input) {
 // Note: the parameter `gitContribute` won't be used in this function
 function getViewSourceHref(item, gitContribute, gitUrlPattern) {
     if (!item || !item.source || !item.source.remote) return '';
-    return getRemoteUrl(item.source.remote, item.source.startLine - '0' + 1, gitContribute, gitUrlPattern);
+    return getRemoteUrl(item.source.remote, item.source.startLine - '0' + 1, null, gitUrlPattern);
 }
 
 function getImproveTheDocHref(item, gitContribute, gitUrlPattern) {
@@ -119,7 +119,8 @@ function getRepoWithoutGitExtension(repo) {
 function normalizeGitUrlToHttps(repo) {
     var pos = repo.indexOf('@');
     if (pos == -1) return repo;
-    return 'https://' + repo.substr(pos + 1).replace(/:[0-9]+/g, '').replace(/:/g, '/');
+    //return 'https://' + repo.substr(pos + 1).replace(/:[0-9]+/g, '').replace(/:/g, '/');
+    return 'https://' + repo.substr(pos + 1).replace(/:/g, '/');
 }
 
 function getNewFileUrl(item, gitContribute, gitUrlPattern) {
